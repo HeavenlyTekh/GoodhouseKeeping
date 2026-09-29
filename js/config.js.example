@@ -1,0 +1,14 @@
+(function() {
+  'use strict';
+
+  // TechSpecs API v5 Configuration
+  // Get your API ID and API Key from https://techspecs.io dashboard
+  window.TS_CONFIG = {
+    API_ID: 'your-api-id-here',
+    API_KEY: 'your-api-key-here',
+    BASE_URL: 'https://api.techspecs.io/v5',
+    CACHE_TTL: 300000,        // 5 min cache
+    RATE_LIMIT: 10,           // free tier limit
+    RATE_WINDOW: 3600000      // 1 hour window
+  };
+})();

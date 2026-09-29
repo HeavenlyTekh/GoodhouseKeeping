@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="theme-color" content="#0071e3">
+  <title>GearGrid</title>
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <a href="#article-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="../index.html" class="logo" aria-label="GearGrid Home">
+          <svg class="logo-icon" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+            <rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+            <rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+            <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+          </svg>
+          <span>GearGrid</span>
+        </a>
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <a href="../best/" class="nav-link">Best Picks</a>
+          <a href="../laptops/" class="nav-link">Laptops</a>
+          <a href="../phones/" class="nav-link">Phones</a>
+          <a href="../audio/" class="nav-link">Audio</a>
+          <a href="../gaming/" class="nav-link">Gaming</a>
+          <a href="../guides/" class="nav-link">Guides</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" aria-label="Toggle theme" data-theme-toggle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="sun-icon">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="moon-icon" style="display:none">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+          </button>
+          <button class="search-btn" aria-label="Search" data-search-open>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-header">
+      <span style="font-family:var(--font-display);font-weight:var(--weight-bold);">Menu</span>
+      <button class="mobile-close" aria-label="Close menu" data-menu-close>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <div class="mobile-nav-item"><a href="../best/" class="mobile-nav-link">Best Picks<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="../laptops/" class="mobile-nav-link">Laptops<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="../phones/" class="mobile-nav-link">Phones<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="../audio/" class="mobile-nav-link">Audio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="../gaming/" class="mobile-nav-link">Gaming<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="../guides/" class="mobile-nav-link">Buying Guides<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+    </nav>
+  </div>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <main id="article-content">
+    <div class="article-page" id="article-root">
+      <div class="container">
+        <div style="text-align:center;padding:var(--spacing-16) 0;color:var(--color-text-tertiary)" id="loading-state">
+          Loading article...
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo" aria-label="GearGrid Home">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+              <rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+              <rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+              <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+            <span>GearGrid</span>
+          </a>
+          <p class="footer-desc">We test hundreds of products to bring you honest, data-driven recommendations. No fluff. No sponsored bias.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Reviews</h3>
+          <nav class="footer-links">
+            <a href="../best/laptops/" class="footer-link">Best Laptops</a>
+            <a href="../best/phones/" class="footer-link">Best Phones</a>
+            <a href="../best/headphones/" class="footer-link">Best Headphones</a>
+            <a href="../best/gaming-pcs/" class="footer-link">Best Gaming PCs</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Guides</h3>
+          <nav class="footer-links">
+            <a href="../guides/how-we-test/" class="footer-link">How We Test</a>
+            <a href="../guides/laptop-buying-guide/" class="footer-link">Buying Guides</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <nav class="footer-links">
+            <a href="../about/" class="footer-link">About</a>
+            <a href="../about/contact/" class="footer-link">Contact</a>
+            <a href="../about/privacy/" class="footer-link">Privacy Policy</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GearGrid. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal" role="dialog" aria-label="Search">
+    <div class="search-modal-inner">
+      <div class="search-modal-header">
+        <h2>Search</h2>
+        <button class="search-close" aria-label="Close search" data-search-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search reviews, guides, and more..." aria-label="Search">
+      </div>
+      <div class="search-result-count"></div>
+      <div class="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast"></div>
+
+  <script src="../js/search.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/newsletter.js"></script>
+  <script>
+  (function() {
+    'use strict';
+
+    function stars(rating, size) {
+      const full = Math.floor(rating);
+      const half = rating % 1 >= 0.25 && rating % 1 < 0.75;
+      const empty = 5 - full - (half ? 1 : 0);
+      let html = '<span class="stars">';
+      for (let i = 0; i < full; i++) html += '<svg class="fill" viewBox="0 0 24 24" width="'+size+'" height="'+size+'" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+      if (half) html += '<svg class="fill" viewBox="0 0 24 24" width="'+size+'" height="'+size+'" fill="currentColor"><defs><linearGradient id="half"><stop offset="50%" stop-color="currentColor"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="url(#half)" stroke="currentColor" stroke-width="1"/></svg>';
+      for (let i = 0; i < empty; i++) html += '<svg class="empty" viewBox="0 0 24 24" width="'+size+'" height="'+size+'" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+      html += '</span>';
+      return html;
+    }
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    }
+
+    function getParam(name) {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    function renderArticle(article) {
+      const root = document.getElementById('article-root');
+      const loading = document.getElementById('loading-state');
+      if (!article) {
+        loading.innerHTML = 'Article not found. <a href="../index.html">Go home</a>';
+        return;
+      }
+
+      document.title = article.title + ' — GearGrid';
+      document.querySelector('meta[name="description"]').content = article.excerpt;
+
+      const p = article.products || [];
+      const tierMap = { best: 'Best Overall', value: 'Best Value', premium: 'Premium Pick', budget: 'Budget Pick' };
+
+      /* Product blocks */
+      const productBlocks = p.map(prod => {
+        const prosHTML = prod.pros.map(pro => '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>'+pro+'</li>').join('');
+        const consHTML = prod.cons.map(con => '<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>'+con+'</li>').join('');
+        const specsHTML = Object.entries(prod.specs).map(([k, v]) =>
+          '<div class="spec-item"><span class="spec-label">'+k+'</span><span class="spec-value">'+v+'</span></div>'
+        ).join('');
+
+        return `
+          <div class="product-block">
+            <div class="product-block-header">
+              <div class="product-block-image">
+                <img src="${prod.image}" alt="${prod.name}" loading="lazy">
+              </div>
+              <div class="product-block-info">
+                <span class="tier-badge ${prod.tierClass}">${prod.tier}</span>
+                <h3 class="product-block-name">${prod.name}</h3>
+                <div class="product-block-price">${prod.price}</div>
+                <div class="product-block-rating">
+                  ${stars(prod.rating, 18)}
+                  <span class="rating-num">${prod.rating}/5</span>
+                </div>
+                <p class="product-block-best"><strong>Best for:</strong> ${prod.bestFor}</p>
+                <a href="${prod.affiliateLink}" class="btn btn-primary" target="_blank" rel="noopener">Check Price</a>
+              </div>
+            </div>
+            <div class="product-block-body">
+              <p class="product-block-text">${prod.body}</p>
+              <div class="product-block-proscons">
+                <div>
+                  <h4 class="pros-list-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Pros</h4>
+                  <ul class="pros-list">${prosHTML}</ul>
+                </div>
+                <div>
+                  <h4 class="cons-list-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>Cons</h4>
+                  <ul class="cons-list">${consHTML}</ul>
+                </div>
+              </div>
+              <div class="specs-grid">${specsHTML}</div>
+            </div>
+            <div class="product-block-footer">
+              <span class="product-block-verdict"><strong>Verdict:</strong> ${prod.verdict}</span>
+              <a href="${prod.affiliateLink}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Check Price</a>
+            </div>
+          </div>`;
+      }).join('');
+
+      /* Quick picks table rows */
+      const tableRows = p.map(prod =>
+        '<tr><td class="tier-cell '+prod.tierClass+'">'+prod.tier+'</td><td>'+prod.name+'</td><td>'+prod.price+'</td><td>'+stars(prod.rating, 14)+'</td><td>'+prod.bestFor.split(',')[0]+'</td></tr>'
+      ).join('');
+
+      /* Comparison table rows */
+      const allSpecKeys = [...new Set(p.flatMap(prod => Object.keys(prod.specs)))];
+      const compRows = allSpecKeys.map(key =>
+        '<tr><td style="font-weight:var(--weight-semibold)">'+key+'</td>'+p.map(prod => '<td>'+(prod.specs[key] || '-')+'</td>').join('')+'</tr>'
+      ).join('');
+      const compHeaders = '<th></th>'+p.map(prod => '<th>'+prod.name+'</th>').join('');
+
+      /* FAQ */
+      const faqHTML = article.faq && article.faq.length > 0
+        ? '<section class="faq-section"><h2 class="faq-title">Frequently Asked Questions</h2><div class="faq-list">'+
+          article.faq.map((item, i) =>
+            '<div class="faq-item"><button class="faq-question" data-faq="'+i+'">'+item.q+'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button><div class="faq-answer"><p>'+item.a+'</p></div></div>'
+          ).join('')+'</div></section>'
+        : '';
+
+      root.innerHTML = `
+        <div class="container">
+          <article>
+            <header class="article-header">
+              <span class="article-card-category">${article.category}</span>
+              <h1 class="article-page-title">${article.title}</h1>
+              <p class="article-page-excerpt">${article.excerpt}</p>
+              <div class="article-page-meta">
+                <span>By ${article.author}</span>
+                <span>${formatDate(article.date)}</span>
+                <span>${article.readTime}</span>
+                ${article.rating ? '<span>'+stars(article.rating, 16)+' '+article.rating+'/5</span>' : ''}
+              </div>
+            </header>
+
+            <div class="article-page-image">
+              <img src="${article.imageLarge}" alt="${article.title}">
+            </div>
+
+            <!-- Quick Picks Table -->
+            <div class="quick-picks">
+              <h2 class="quick-picks-title">Quick Picks</h2>
+              <table class="quick-picks-table">
+                <thead><tr><th>Tier</th><th>Product</th><th>Price</th><th>Rating</th><th>Best For</th></tr></thead>
+                <tbody>${tableRows}</tbody>
+              </table>
+            </div>
+
+            <!-- Methodology -->
+            ${article.howWeTested ? '<div class="methodology"><h3 class="methodology-title">How We Tested</h3><p class="methodology-text">'+article.howWeTested+'</p></div>' : ''}
+
+            <!-- Product Blocks -->
+            <div class="products-list">${productBlocks}</div>
+
+            <!-- Full Comparison Table -->
+            ${p.length > 1 ? '<section class="comparison-section-full"><h2 class="quick-picks-title" style="margin-bottom:var(--spacing-4)">Full Specs Comparison</h2><table><thead><tr>'+compHeaders+'</tr></thead><tbody>'+compRows+'</tbody></table></section>' : ''}
+
+            <!-- Buying Guide -->
+            <section class="buying-guide">
+              <h2 class="buying-guide-title">The Bottom Line</h2>
+              <p>${article.verdict}</p>
+            </section>
+
+            <!-- FAQ -->
+            ${faqHTML}
+
+            <!-- Related -->
+            <section style="text-align:center;padding:var(--spacing-12) 0">
+              <a href="../index.html" class="btn btn-outline">&larr; Back to Home</a>
+            </section>
+          </article>
+        </div>`;
+
+      /* FAQ toggle */
+      document.querySelectorAll('[data-faq]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          this.parentElement.classList.toggle('open');
+        });
+      });
+    }
+
+    fetch('../data/articles.json')
+      .then(r => r.json())
+      .then(data => {
+        window.__articles = function() { return data; };
+        const slug = getParam('slug');
+        const article = data.find(a => a.slug === slug);
+        renderArticle(article || data[0]);
+      })
+      .catch(err => {
+        document.getElementById('loading-state').innerHTML = 'Failed to load article. <a href="../index.html">Go home</a>';
+      });
+  })();
+  </script>
+</body>
+</html>

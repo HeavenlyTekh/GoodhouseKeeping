@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+scraper/node_modules/
+
+# Local secrets - use js/config.js.example as template
+js/config.js
+
+# Scraped cache (regenerable via npm run scrape)
+data/devices/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

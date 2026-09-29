@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GearGrid We test and review the best tech gadgets and home appliances. Honest, data-driven buying guides for laptops, phones, refrigerators, washing machines, air fryers and more.">
+  <meta name="theme-color" content="#0071e3">
+  <title>GearGrid — Honest Reviews of Tech Gadgets & Home Appliances</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo" aria-label="GearGrid Home">
+          <svg class="logo-icon" viewBox="0 0 32 32" fill="none">
+            <rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+            <rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+            <rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+            <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+          </svg>
+          <span>GearGrid</span>
+        </a>
+
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <a href="/best/" class="nav-link active">Best Picks</a>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">
+              Gadgets
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="/laptops/" class="dropdown-link">Laptops</a>
+              <a href="/phones/" class="dropdown-link">Phones</a>
+              <a href="/audio/" class="dropdown-link">Audio</a>
+              <a href="/gaming/" class="dropdown-link">Gaming</a>
+              <a href="/accessories/" class="dropdown-link">Accessories</a>
+            </div>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">
+              Home Appliances
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="/refrigerators/" class="dropdown-link">Refrigerators</a>
+              <a href="/washing-machines/" class="dropdown-link">Washing Machines</a>
+              <a href="/air-conditioners/" class="dropdown-link">Air Conditioners</a>
+              <a href="/vacuum-cleaners/" class="dropdown-link">Vacuum Cleaners</a>
+              <a href="/kitchen-appliances/" class="dropdown-link">Kitchen Appliances</a>
+              <a href="/air-fryers/" class="dropdown-link">Air Fryers</a>
+            </div>
+          </div>
+          <a href="/guides/" class="nav-link">Guides</a>
+          <a href="/deals/" class="nav-link">Deals</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" aria-label="Toggle theme" data-theme-toggle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="sun-icon">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="moon-icon" style="display:none">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+          </button>
+          <button class="search-btn" aria-label="Search" data-search-open>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+          <button class="menu-btn" aria-label="Menu" data-menu-open>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-header">
+      <span class="mobile-menu-title">Menu</span>
+      <button class="mobile-close" aria-label="Close menu" data-menu-close>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <div class="mobile-nav-item"><a href="/best/" class="mobile-nav-link">Best Picks<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">Gadgets</div>
+        <div class="mobile-nav-item"><a href="/laptops/" class="mobile-nav-link">Laptops<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/phones/" class="mobile-nav-link">Phones<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/audio/" class="mobile-nav-link">Audio<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/gaming/" class="mobile-nav-link">Gaming<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/accessories/" class="mobile-nav-link">Accessories<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      </div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">Home Appliances</div>
+        <div class="mobile-nav-item"><a href="/refrigerators/" class="mobile-nav-link">Refrigerators<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/washing-machines/" class="mobile-nav-link">Washing Machines<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/air-conditioners/" class="mobile-nav-link">Air Conditioners<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/vacuum-cleaners/" class="mobile-nav-link">Vacuum Cleaners<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/kitchen-appliances/" class="mobile-nav-link">Kitchen Appliances<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+        <div class="mobile-nav-item"><a href="/air-fryers/" class="mobile-nav-link">Air Fryers<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      </div>
+      <div class="mobile-nav-item"><a href="/guides/" class="mobile-nav-link">Buying Guides<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="/deals/" class="mobile-nav-link">Deals<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+      <div class="mobile-nav-item"><a href="/about/" class="mobile-nav-link">About<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></a></div>
+    </nav>
+  </div>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Stale Data Banner -->
+    <div class="stale-banner" role="alert">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span>Some product data may be outdated — API connection unavailable. Showing previously saved data.</span>
+      <button class="stale-banner-dismiss" aria-label="Dismiss notice" data-stale-dismiss>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-dot-grid" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              300+ Products Tested This Year
+            </div>
+            <h1 class="hero-title">
+              Find the Best <span class="highlight">Tech Gadgets</span><br>&amp; <span class="highlight">Home Appliances</span>
+            </h1>
+            <p class="hero-subtitle">
+              We test and review hundreds of products from laptops and headphones to refrigerators and air fryers so you can buy with confidence. Honest, data-driven, and always unbiased.
+            </p>
+            <a href="/best/" class="btn btn-primary hero-cta">Get started</a>
+          </div>
+          <div class="hero-shuffle">
+            <div id="shuffle-grid" class="shuffle-grid" aria-label="Rotating gallery of gadgets and home appliances"></div>
+          </div>
+        </div>
+
+        <!-- Brand Logo Carousel -->
+        <div class="logo-carousel" aria-label="Trusted brands we review">
+          <!-- Row 1 — scrolls left -->
+          <div class="logo-track logo-track--left">
+            <div class="logo-row">
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/apple" alt="Apple" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/samsung" alt="Samsung" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/google" alt="Google Pixel" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/xiaomi" alt="Xiaomi" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/oneplus" alt="OnePlus" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/huawei" alt="Huawei" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/sony" alt="Sony" width="28" height="28"></span>
+            </div>
+            <div class="logo-row">
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/apple" alt="Apple" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/samsung" alt="Samsung" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/google" alt="Google Pixel" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/xiaomi" alt="Xiaomi" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/oneplus" alt="OnePlus" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/huawei" alt="Huawei" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/sony" alt="Sony" width="28" height="28"></span>
+            </div>
+          </div>
+
+          <!-- Row 2 — scrolls right -->
+          <div class="logo-track logo-track--right">
+            <div class="logo-row">
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/oppo" alt="Oppo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/vivo" alt="Vivo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/motorola" alt="Motorola" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/honor" alt="Honor" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/asus" alt="Asus" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/nokia" alt="Nokia" width="28" height="28"></span>
+            </div>
+            <div class="logo-row">
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/oppo" alt="Oppo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/vivo" alt="Vivo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/motorola" alt="Motorola" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/honor" alt="Honor" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/asus" alt="Asus" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/lenovo" alt="Lenovo" width="28" height="28"></span>
+              <span class="logo-item"><img src="https://cdn.simpleicons.org/nokia" alt="Nokia" width="28" height="28"></span>
+            </div>
+          </div>
+
+          <!-- Fade edges -->
+          <div class="logo-carousel-fade logo-carousel-fade--left" aria-hidden="true"></div>
+          <div class="logo-carousel-fade logo-carousel-fade--right" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Picks -->
+    <section class="section best-picks-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-label">Trending Now</span>
+            <h2 class="section-title">Best Picks</h2>
+          </div>
+          <a href="/best/" class="section-link">
+            View All
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+        <div class="articles-grid" id="best-picks-grid">
+          <div class="loading-spinner" data-spinner="bestpicks"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Roundups -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-label">Latest</span>
+            <h2 class="section-title">New Reviews & Roundups</h2>
+          </div>
+          <a href="/best/" class="section-link">
+            View All
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+        <div class="articles-grid" id="latest-grid">
+          <div class="loading-spinner" data-spinner="latest"></div>
+          <div class="fallback-message" data-fallback="latest" style="display:none">
+            <p>Couldn't load latest products.</p>
+            <button class="btn btn-outline btn-sm" data-retry="latest">Retry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse by Category -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-label">Categories</span>
+            <h2 class="section-title">Browse by Category</h2>
+          </div>
+        </div>
+        <div class="browse-section">
+          <div class="browse-group">
+            <div class="browse-group-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M2 21h20"/></svg>
+              <h3 class="browse-group-title">Gadgets</h3>
+            </div>
+            <div class="browse-grid" id="browse-gadgets">
+              <div class="loading-spinner" data-spinner="gadgets"></div>
+              <div class="fallback-message" data-fallback="gadgets" style="display:none">
+                <p>Couldn't load categories.</p>
+                <button class="btn btn-outline btn-sm" data-retry="gadgets">Retry</button>
+              </div>
+            </div>
+          </div>
+          <div class="browse-group">
+            <div class="browse-group-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <h3 class="browse-group-title">Home Appliances</h3>
+            </div>
+            <div class="browse-grid" id="browse-appliances">
+              <div class="loading-spinner" data-spinner="appliances"></div>
+              <div class="fallback-message" data-fallback="appliances" style="display:none">
+                <p>Couldn't load categories.</p>
+                <button class="btn btn-outline btn-sm" data-retry="appliances">Retry</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Spotlight -->
+    <section class="comparison-section section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-label">Head to Head</span>
+            <h2 class="section-title">This vs That</h2>
+          </div>
+        </div>
+        <div class="comparison-grid" id="comparison-spotlight">
+          <div class="loading-spinner" data-spinner="comparison"></div>
+          <div class="fallback-message" data-fallback="comparison" style="display:none">
+            <p>Couldn't load comparison data.</p>
+            <button class="btn btn-outline btn-sm" data-retry="comparison">Retry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Articles -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-group">
+            <span class="section-label">More to Explore</span>
+            <h2 class="section-title">Top Reads</h2>
+          </div>
+        </div>
+        <div class="articles-grid four-col" id="more-grid">
+          <div class="loading-spinner" data-spinner="more"></div>
+          <div class="fallback-message" data-fallback="more" style="display:none">
+            <p>Couldn't load more products.</p>
+            <button class="btn btn-outline btn-sm" data-retry="more">Retry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section section">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h2 class="newsletter-title">Get the GearGrid Newsletter</h2>
+          <p class="newsletter-desc">Weekly honest takes on the best tech and home appliances. No fluff, no spam.</p>
+          <form class="newsletter-form" data-newsletter>
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="newsletter-disclaimer">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal-overlay" id="product-modal" role="dialog" aria-label="Product details" aria-hidden="true">
+      <div class="product-modal">
+        <button class="product-modal-close" aria-label="Close details" data-modal-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+        <div class="product-modal-content" id="modal-content">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo" aria-label="GearGrid Home">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+              <rect x="18" y="2" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+              <rect x="2" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.9"/>
+              <rect x="18" y="18" width="12" height="12" rx="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+            <span>GearGrid</span>
+          </a>
+          <p class="footer-desc">We test hundreds of tech gadgets and home appliances to bring you honest, data-driven recommendations. No fluff. No sponsored bias. Just what's actually worth buying.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="RSS"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Gadgets</h3>
+          <nav class="footer-links">
+            <a href="/best/laptops/" class="footer-link">Best Laptops</a>
+            <a href="/best/phones/" class="footer-link">Best Phones</a>
+            <a href="/best/headphones/" class="footer-link">Best Headphones</a>
+            <a href="/best/gaming-pcs/" class="footer-link">Best Gaming PCs</a>
+            <a href="/best/tablets/" class="footer-link">Best Tablets</a>
+            <a href="/best/monitors/" class="footer-link">Best Monitors</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Home Appliances</h3>
+          <nav class="footer-links">
+            <a href="/best/refrigerators/" class="footer-link">Best Refrigerators</a>
+            <a href="/best/washing-machines/" class="footer-link">Best Washing Machines</a>
+            <a href="/best/air-fryers/" class="footer-link">Best Air Fryers</a>
+            <a href="/best/vacuum-cleaners/" class="footer-link">Best Vacuum Cleaners</a>
+            <a href="/best/air-conditioners/" class="footer-link">Best Air Conditioners</a>
+            <a href="/best/microwaves/" class="footer-link">Best Microwaves</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <nav class="footer-links">
+            <a href="/about/" class="footer-link">About</a>
+            <a href="/about/contact/" class="footer-link">Contact</a>
+            <a href="/about/ethics/" class="footer-link">Editorial Ethics</a>
+            <a href="/about/privacy/" class="footer-link">Privacy Policy</a>
+            <a href="/about/terms/" class="footer-link">Terms of Use</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GearGrid. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="/about/privacy/">Privacy</a>
+          <a href="/about/terms/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div class="search-modal" role="dialog" aria-label="Search">
+    <div class="search-modal-inner">
+      <div class="search-modal-header">
+        <h2>Search</h2>
+        <button class="search-close" aria-label="Close search" data-search-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search reviews, guides, and more..." aria-label="Search">
+      </div>
+      <div class="search-result-count"></div>
+      <div class="search-results"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="js/shuffle-grid.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/pagination.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/newsletter.js" defer></script>
+</body>
+</html>

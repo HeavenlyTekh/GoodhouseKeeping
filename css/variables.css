@@ -1,0 +1,157 @@
+/* ============================================
+   GearGrid — Design Tokens (Apple-inspired)
+   ============================================ */
+
+:root {
+  /* Brand */
+  --brand-name: 'GearGrid';
+
+  /* Typography — Apple system font stack */
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Type Scale — large, bold headlines */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --text-6xl: 4.5rem;
+  --text-7xl: 5.5rem;
+
+  /* Font Weights */
+  --weight-thin: 100;
+  --weight-light: 200;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing — generous */
+  --spacing-px: 1px;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+  --spacing-40: 10rem;
+
+  /* Layout */
+  --max-width: 1120px;
+  --content-width: 720px;
+  --nav-height: 52px;
+
+  /* Borders — pill-shaped */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows — minimal, flat */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.1);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.12);
+
+  /* Transitions — calm, premium */
+  --transition-fast: 200ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Light theme (default) */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f5f5f7;
+  --color-bg-tertiary: #e8e8ed;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f5f5f7;
+  --color-border: #d2d2d7;
+  --color-border-hover: #b0b0b6;
+
+  --color-text-primary: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-text-tertiary: #86868b;
+  --color-text-inverse: #ffffff;
+
+  /* Accent — single blue, used sparingly */
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ED;
+  --color-accent-light: #f0f7ff;
+  --color-accent-subtle: #e1ecfa;
+
+  /* Semantic */
+  --color-success: #248a3d;
+  --color-success-light: #e8f8eb;
+  --color-warning: #b25000;
+  --color-warning-light: #fef4e8;
+  --color-error: #d70015;
+  --color-error-light: #fde8ea;
+
+  /* Star rating */
+  --color-star: #ff9500;
+  --color-star-empty: #d2d2d7;
+
+  /* Tier badges */
+  --color-tier-best: #248a3d;
+  --color-tier-value: #0071e3;
+  --color-tier-premium: #6e3aaf;
+  --color-tier-budget: #b25000;
+
+  /* Nav glass */
+  --nav-blur: 20px;
+  --nav-bg-scrolled: rgba(255,255,255,0.72);
+  --nav-border-scrolled: rgba(0,0,0,0.08);
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-bg-secondary: #1c1c1e;
+  --color-bg-tertiary: #2c2c2e;
+  --color-surface: #1c1c1e;
+  --color-surface-hover: #2c2c2e;
+  --color-border: #38383a;
+  --color-border-hover: #48484a;
+
+  --color-text-primary: #f5f5f7;
+  --color-text-secondary: #a1a1a6;
+  --color-text-tertiary: #6e6e73;
+  --color-text-inverse: #1d1d1f;
+
+  --color-accent: #2997ff;
+  --color-accent-hover: #40a9ff;
+  --color-accent-light: #0a1a2e;
+  --color-accent-subtle: #0d2137;
+
+  --color-success: #30d158;
+  --color-success-light: #0a2e12;
+  --color-warning: #ff9f0a;
+  --color-warning-light: #2e1a00;
+  --color-error: #ff453a;
+  --color-error-light: #2e0a0a;
+
+  --color-star: #ff9f0a;
+  --color-star-empty: #38383a;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.35);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,0.4);
+
+  --nav-bg-scrolled: rgba(28,28,30,0.72);
+  --nav-border-scrolled: rgba(255,255,255,0.08);
+}
